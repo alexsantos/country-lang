@@ -1,7 +1,7 @@
 {
   "name": "country-lang",
   "description": "A node module to test for country/lang.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/AlexSantos/country-lang",
   "author": {
     "name": "Alexandre Santos",
@@ -20,7 +20,7 @@
       "url": "https://github.com/AlexSantos/country-lang/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "lib/country-lang",
+  "main": "index",
   "engines": {
     "node": ">= 0.8.0"
   },

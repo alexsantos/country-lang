@@ -1,6 +1,6 @@
 'use strict';
 
-var country_lang = require('../lib/country-lang.js');
+var country_lang = require('../index.js');
 
 exports.test = {
     'inexistent country': function (test) {
