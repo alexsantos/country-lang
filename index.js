@@ -18,3 +18,27 @@ exports.assert = function (country, language) {
     return matrix[country].indexOf(language) > -1 ? true : false;
 };
 
+exports.languages = function (country) {
+
+    if (country) {
+        return matrix[country];
+    }
+    return [];
+};
+
+exports.countries = function (language) {
+
+    var countries = [],
+        prop;
+    if (language) {
+        for (prop in matrix) {
+            if (matrix.hasOwnProperty(prop)) {
+                if (matrix[prop].filter(function (country) {return country === language; }).length > 0) {
+                    countries.push(prop);
+                }
+            }
+        }
+    }
+    return countries;
+};
+
