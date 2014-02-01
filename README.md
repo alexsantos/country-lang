@@ -12,8 +12,10 @@ country_lang.assert('US', 'pt'); //false
 ```
 
 ## Documentation
-This module is based on the supported languages for each country as listed on the file SUPPORTED available on the Ubuntu 13.10 directory ```/usr/share/i18n```
-The function assert receives two parameters: country as ISO 3166-1 alpha-2 (uppercase) and language (lowercase). If the pair is possible, returns true, all other situations returns false.
+This module is based on the supported languages for each country as listed on the file SUPPORTED available on the Ubuntu 13.10 directory ```/usr/share/i18n```. The function available are:
+* assert(country, language) - tests if the country as ISO 3166-1 alpha-2 (uppercase) and language (lowercase) are two possible pairs. If possible, returns true, all other situations returns false.
+* languages(country) - returns an array with all possible languages for that country. If the country doesn't exist, returns an empty array.
+* countries(languages) - returns an array with all possible countries for that language. If the language doesn't exist, returns an empty array.
 
 The command line tool /bin/country-lang.js receives two parameters just like the assert function. If it is only passed the country it returns an array of possible languages.
 
