@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
 var matrix = require('../data/country_lang.json'),
     country = process.argv[2],
     language = process.argv[3];
