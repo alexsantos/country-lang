@@ -26,14 +26,16 @@ exports.languages = function (country) {
     return [];
 };
 
+
 exports.countries = function (language) {
 
     var countries = [],
-        prop;
+        prop,
+        compare = function compareValues(value) { return value  === language; };
     if (language) {
         for (prop in matrix) {
             if (matrix.hasOwnProperty(prop)) {
-                if (matrix[prop].filter(function (country) {return country === language; }).length > 0) {
+                if (matrix[prop].filter(compare).length > 0) {
                     countries.push(prop);
                 }
             }
