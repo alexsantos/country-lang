@@ -5,23 +5,25 @@
  * Copyright (c) 2014 AlexSantos
  * Licensed under the MIT license.
  */
-
 'use strict';
 
 var matrix = require('./data/country_lang.json');
 
 exports.assert = function (country, language) {
 
-    if (matrix[country] === undefined) {
-        return false;
-    }
-    return matrix[country].indexOf(language) > -1 ? true : false;
+    return matrix.filter(function (countries) {
+        return countries.country === country;
+    }).filter(function (countryLang) {
+        return countryLang.languages == language;
+    }).length > 0 ? true : false;
 };
 
 exports.languages = function (country) {
 
     if (country) {
-        return matrix[country];
+        return matrix.filter(function (language) {
+            return language.country === country;
+        }).shift().languages;
     }
     return [];
 };
@@ -29,18 +31,11 @@ exports.languages = function (country) {
 
 exports.countries = function (language) {
 
-    var countries = [],
-        prop,
-        compare = function compareValues(value) { return value  === language; };
-    if (language) {
-        for (prop in matrix) {
-            if (matrix.hasOwnProperty(prop)) {
-                if (matrix[prop].filter(compare).length > 0) {
-                    countries.push(prop);
-                }
-            }
-        }
-    }
-    return countries;
+    return matrix.filter(function (country) {
+        return country.languages.filter(function (countryLang) {
+            return countryLang === language;
+        }).length > 0;
+    }).map(function (countries) {
+        return countries.country;
+    });
 };
-
