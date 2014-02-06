@@ -13,16 +13,23 @@ case undefined:
     console.log("No parameters given. -h or --help for usage instructions.");
     break;
 default:
-    if (matrix[country] === undefined) {
+    if (matrix.filter(function (x) {
+        return x.country === country;
+    }).length === 0) {
         console.log("Country not found.");
         break;
     }
     switch (language) {
     case undefined:
-        console.log(matrix[country]);
+        console.log(matrix.filter(function (x) {
+            return x.country === country;
+        }).shift().languages);
         break;
     default:
-        console.log(matrix[country].indexOf(language) > -1 ? true : false);
+        console.log(matrix.filter(function (countries) {
+            return countries.country === country;
+        }).filter(function (countryLang) {
+            return countryLang.languages == language;
+        }).length > 0 ? true : false);
     }
 }
-
