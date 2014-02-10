@@ -13,7 +13,7 @@ exports.assert = function (country, language) {
 
     return matrix.filter(function (countries) {
         return countries.country == country;
-    }).filter(function (countryLang) { //console.log(countryLang.languages);
+    }).filter(function (countryLang) {
         return countryLang.languages.indexOf(language) > -1; })
     .length > 0 ? true : false;
 };
