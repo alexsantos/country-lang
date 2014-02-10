@@ -18,9 +18,14 @@ exports.test = {
         test.equal(country_lang.assert('PT', 'en'), false, 'should be false.');
         test.done();
     },
-    'country exists and language exists': function (test) {
+    'country exists and language exists PT pt': function (test) {
         test.expect(1);
         test.ok(country_lang.assert('PT', 'pt'), 'should be true.');
+        test.done();
+    },
+    'country exists and language exists CH fr': function (test) {
+        test.expect(1);
+        test.ok(country_lang.assert('CH', 'fr'), 'should be true.');
         test.done();
     },
     'returns an array of languages for country': function (test) {
