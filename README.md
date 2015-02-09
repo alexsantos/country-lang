@@ -1,4 +1,4 @@
-# country-lang [![Build Status](https://secure.travis-ci.org/AlexSantos/country-lang.png?branch=master)](http://travis-ci.org/AlexSantos/country-lang)
+# country-lang [![Build Status](https://secure.travis-ci.org/alexsantos/country-lang.png?branch=master)](http://travis-ci.org/alexsantos/country-lang)
 
 A node module to test for country/lang.
 
