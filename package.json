@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/AlexSantos/country-lang.git"
+    "url": "git://github.com/alexsantos/country-lang.git"
   },
   "bugs": {
-    "url": "https://github.com/AlexSantos/country-lang/issues"
+    "url": "https://github.com/alexsantos/country-lang/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/AlexSantos/country-lang/blob/master/LICENSE-MIT"
+      "url": "https://github.com/alexsantos/country-lang/blob/master/LICENSE-MIT"
     }
   ],
   "main": "index",
