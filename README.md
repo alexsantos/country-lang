@@ -1,6 +1,6 @@
-# country-lang [![Build Status](https://secure.travis-ci.org/alexsantos/country-lang.png?branch=master)](http://travis-ci.org/alexsantos/country-lang)
+# [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image]
 
-A node module to test for country/lang.
+# A node module to test for country/lang.
 
 ## Getting Started
 Install the module with: `npm install country-lang`
@@ -25,3 +25,10 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 ## License
 Copyright (c) 2014 Alexandre Santos  
 Licensed under the MIT license.
+
+[npm-url]: https://npmjs.org/package/country-lang
+[npm-image]: https://badge.fury.io/js/country-lang.svg
+[travis-url]: https://travis-ci.org/alexsantos/country-lang
+[travis-image]: https://travis-ci.org/alexsantos/country-lang.svg?branch=master
+[daviddm-url]: https://david-dm.org/alexsantos/country-lang.svg?theme=shields.io
+[daviddm-image]: https://david-dm.org/alexsantos/country-lang
