@@ -1,4 +1,4 @@
-# [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image]
+# [![NPM version](https://badge.fury.io/js/country-lang.svg)](https://npmjs.org/package/country-lang) [![Build Status](https://travis-ci.org/alexsantos/country-lang.svg?branch=master)](https://travis-ci.org/alexsantos/country-lang) [![Dependency Status](https://david-dm.org/alexsantos/country-lang.svg)](https://david-dm.org/alexsantos/country-lang) [![devDependency Status](https://david-dm.org/alexsantos/country-lang/dev-status.svg)](https://david-dm.org/alexsantos/country-lang#info=devDependencies)
 
 # A node module to test for country/lang.
 
@@ -28,7 +28,4 @@ Licensed under the MIT license.
 
 [npm-url]: https://npmjs.org/package/country-lang
 [npm-image]: https://badge.fury.io/js/country-lang.svg
-[travis-url]: https://travis-ci.org/alexsantos/country-lang
-[travis-image]: https://travis-ci.org/alexsantos/country-lang.svg?branch=master
-[daviddm-url]: https://david-dm.org/alexsantos/country-lang.svg?theme=shields.io
-[daviddm-image]: https://david-dm.org/alexsantos/country-lang
+
