@@ -1,7 +1,7 @@
 {
   "name": "country-lang",
   "description": "A node module to test for country/lang.",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "homepage": "https://github.com/AlexSantos/country-lang",
   "author": {
     "name": "Alexandre Santos",
@@ -28,10 +28,10 @@
     "test": "grunt nodeunit"
   },
   "devDependencies": {
-    "grunt-contrib-jshint": "~0.6.4",
-    "grunt-contrib-nodeunit": "~0.2.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt": "~0.4.2"
+    "grunt-contrib-jshint": "~0.12.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt": "~0.4.5"
   },
   "keywords": ["country", "language"]
 }
